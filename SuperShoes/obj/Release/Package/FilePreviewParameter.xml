@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="SuperShoe" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Users\\mcadavid\\Documents\\Visual\ Studio\ 2015\\Projects\\SuperShoes\\SuperShoes\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^C:\\Users\\mcadavid\\Documents\\Visual\ Studio\ 2015\\Projects\\SuperShoes\\SuperShoes\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="SuperShoesContext-Web.config Connection String" description="" value="Data Source=(localdb)\MSSQLLocalDB; Initial Catalog=SuperShoesContext-20170206141036; Integrated Security=True; MultipleActiveResultSets=True; AttachDbFilename=|DataDirectory|SuperShoesContext-20170206141036.mdf" tags="">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\mcadavid\\Documents\\Visual\ Studio\ 2015\\Projects\\SuperShoes\\SuperShoes\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='SuperShoesContext']/@connectionString" />
+  </parameter>
+</parameters>
