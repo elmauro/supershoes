@@ -196,8 +196,10 @@
     <Compile Include="Controllers\ArticlesController.cs" />
     <Compile Include="Controllers\BasicAuthenticationFilter .cs" />
     <Compile Include="Controllers\BasicAuthenticationIdentity.cs" />
+    <Compile Include="Controllers\GlobalExceptionHandler.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\StoresController.cs" />
+    <Compile Include="Controllers\TextResult.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>

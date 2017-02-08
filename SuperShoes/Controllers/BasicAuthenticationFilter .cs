@@ -35,6 +35,7 @@ namespace SuperShoes.Controllers
         /// <param name="actionContext"></param>
         public override void OnAuthorization(HttpActionContext actionContext)
         {
+
             if (Active)
             {
                 var identity = ParseAuthorizationHeader(actionContext);
@@ -118,7 +119,15 @@ namespace SuperShoes.Controllers
         void Challenge(HttpActionContext actionContext)
         {
             var host = actionContext.Request.RequestUri.DnsSafeHost;
-            actionContext.Response = actionContext.Request.CreateResponse(HttpStatusCode.Unauthorized);
+
+            var message = new
+            {
+                success = "false",
+                error_code = "401",
+                error_msg = "Not authorized"
+            };
+
+            actionContext.Response = actionContext.Request.CreateResponse(HttpStatusCode.Unauthorized, message);
             actionContext.Response.Headers.Add("WWW-Authenticate", string.Format("Basic realm=\"{0}\"", host));
         }
 
