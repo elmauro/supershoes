@@ -206,10 +206,8 @@
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Article.cs" />
     <Compile Include="Models\ArticleDTO.cs" />
-    <Compile Include="Models\ArticlesDTO.cs" />
     <Compile Include="Models\Store.cs" />
     <Compile Include="Models\StoreDTO.cs" />
-    <Compile Include="Models\StoresDTO.cs" />
     <Compile Include="Models\SuperShoesContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
