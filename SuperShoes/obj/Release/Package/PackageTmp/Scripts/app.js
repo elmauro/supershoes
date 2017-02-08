@@ -14,6 +14,9 @@
             url: uri,
             dataType: 'json',
             contentType: 'application/json',
+            headers: {
+                "Authorization": "Basic bXlfdXNlcjpteV9wYXNzd29yZA=="
+            },
             data: data ? JSON.stringify(data) : null
         }).fail(function (jqXHR, textStatus, errorThrown) {
             self.error(errorThrown);
@@ -31,6 +34,12 @@
 
     self.getArticles = function (item) {
         ajaxHelper(articlesUri + item.id, 'GET').done(function (data) {
+            self.articles(data.articles);
+        });
+    }
+
+    self.getAllArticles = function () {
+        ajaxHelper(articlesUri, 'GET').done(function (data) {
             self.articles(data.articles);
         });
     }

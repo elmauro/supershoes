@@ -14,6 +14,9 @@
             url: uri,
             dataType: 'json',
             contentType: 'application/json',
+            headers: {
+                "Authorization": "Basic bXlfdXNlcjpteV9wYXNzd29yZA=="
+            },
             data: data ? JSON.stringify(data) : null
         }).fail(function (jqXHR, textStatus, errorThrown) {
             self.error(errorThrown);
