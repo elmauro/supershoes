@@ -12,7 +12,7 @@ namespace SuperShoes.Controllers
     {
         private SuperShoesContext db = new SuperShoesContext();
 
-        // GET: api/Stores
+        // GET: api/stores
         public HttpResponseMessage GetStores()
         {
             //return db.Stores;

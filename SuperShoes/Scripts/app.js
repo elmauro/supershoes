@@ -34,6 +34,12 @@
             self.articles(data.articles);
         });
     }
+
+    self.getAllArticles = function () {
+        ajaxHelper(articlesUri, 'GET').done(function (data) {
+            self.articles(data.articles);
+        });
+    }
 };
 
 ko.applyBindings(new ViewModel());
