@@ -31,6 +31,7 @@ namespace SuperShoes.Controllers
                 price = a.price,
                 total_in_shelf = a.total_in_shelf,
                 total_in_vault = a.total_in_vault,
+                store_id = a.StoreId,
                 store_name = a.Store.name
             };
 
@@ -69,6 +70,7 @@ namespace SuperShoes.Controllers
                                    price = a.price,
                                    total_in_shelf = a.total_in_shelf,
                                    total_in_vault = a.total_in_vault,
+                                   store_id = a.StoreId,
                                    store_name = a.Store.name
                                };
 
