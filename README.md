@@ -45,14 +45,10 @@ This Application was published on Azure. For publish de Application, follow the 
 
 The Api uses HTTP Basic Authentication. The username is "my_user" and the password is "my_password" for the proof. Encoding this whit https://www.base64encode.org/ the result looks like this bXlfdXNlcjpteV9wYXNzd29yZA==
 
-The Api offers the nex Services:
+1. The Api offers the nex Services:
 
-	http://supershoe.azurewebsites.net/Help
+	a. http://supershoe.azurewebsites.net/Help
 
-It's possible to use Postman to test the API Services:
+	b. It's possible to use Postman to test the API Services:
 
 	<img src="https://github.com/elmauro/supershoes/blob/documentation/SuperShoes/Images/Postman1.png?raw=true">
-
-
-
-
