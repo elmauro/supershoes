@@ -79,7 +79,7 @@
                 self.getAllArticles();
             }
             else {
-                self.getArticles({ "id": article.StoreId });
+                self.getArticles({ "id": item.store_id });
             }
         });
     }
