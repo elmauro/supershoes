@@ -26,13 +26,13 @@ This Application was published on Azure. For publish de Application, follow the 
 
 	b.  In Solution Explorer, right-click the project and select Publish
 
-		<img src="Images/Publishing1.png" alt>
+		<img src="SuperShoes/Images/Publishing1.png" alt>
 
 		Clicking Publish invokes the Publish Web dialog.
 
 	c.  Configure the connection and settings
 
-		<img src="Images/Publishing2.png" alt>
+		<img src="SuperShoes/Images/Publishing2.png" alt>
 
 	d. Just click the Settings tab and check "Execute Code First Migrations"
 
@@ -53,7 +53,7 @@ This Application was published on Azure. For publish de Application, follow the 
 
 	It's possible to use Postman to test the API Services:
 
-	<img src="Images/Postman1.png" alt>
+	<img src="SuperShoes/Images/Postman1.png" alt>
 
 
 
