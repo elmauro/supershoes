@@ -32,6 +32,12 @@
         ajaxHelper(storesUri, 'GET').done(function (data) {
             self.stores(data.stores);
             self.loader(false);
+
+            self.articles(new Array());
+            self.show(false);
+            self.visible(false);
+
+            self.hideVisibility();
         });
     }
 
@@ -42,6 +48,7 @@
         self.currentStore.id = item.id;
         self.currentStore.name(item.name);
         self.currentStore.address(item.address);
+
         self.show(true);
         self.visible(false);
         self.visibility(false);
@@ -65,9 +72,6 @@
     self.removeStore = function (item) {
         ajaxHelper(storesUri + item.id, 'DELETE').done(function () {
             getAllStores();
-            self.articles(new Array());
-            self.show(false);
-            self.visible(false);
         });
     }
 
@@ -79,23 +83,28 @@
                 self.getAllArticles();
             }
             else {
-                self.getArticles({ "id": article.StoreId });
+                self.getArticles({ "id": item.store_id });
             }
         });
     }
 
     self.setVisibility = function () {
+        self.articles(new Array());
         self.visibility(true);
+        self.show(false);
+        self.visible(false);
+
         self.currentStore.id = 0;
         self.currentStore.name('');
         self.currentStore.address('');
-        self.articles(new Array());
-        self.show(false);
-        self.visible(false);
     }
 
     self.hideVisibility = function () {
+        self.articles(new Array());
         self.visibility(false);
+        self.show(false);
+        self.visible(false);
+
         self.currentStore.id = 0;
         self.currentStore.name('');
         self.currentStore.address('');
@@ -108,13 +117,14 @@
     }
 
     self.editStore = function (item) {
+        self.articles(new Array());
         self.visibility(true);
+        self.show(false);
+        self.visible(false);
+
         self.currentStore.id = item.id;
         self.currentStore.name(item.name);
         self.currentStore.address(item.address);
-        self.articles(new Array());
-        self.show(false);
-        self.visible(false);
     }
 
     self.addStore = function (formElement) {
@@ -127,19 +137,19 @@
         if (store.id !== 0) {
             ajaxHelper(storesUri + store.id, 'PUT', store).done(function () {
                 getAllStores();
-                self.hideVisibility();
             });
         }
         else{
             ajaxHelper(storesUri, 'POST', store).done(function (item) {
                 getAllStores();
-                self.hideVisibility();
             });
         }
     }
 
     self.setVisible = function () {
         self.visible(true);
+        self.visibility(false);
+
         self.currentArticle.id = 0;
         self.currentArticle.name('');
         self.currentArticle.description('');
@@ -147,11 +157,12 @@
         self.currentArticle.total_in_shelf('');
         self.currentArticle.total_in_vault('');
         self.currentArticle.StoreId = self.currentStore.id;
-        self.visibility(false);
     }
 
     self.hideVisible = function () {
         self.visible(false);
+        self.visibility(false);
+
         self.currentArticle.id = 0;
         self.currentArticle.name('');
         self.currentArticle.description('');
@@ -173,6 +184,8 @@
 
     self.editArticle = function (item) {
         self.visible(true);
+        self.visibility(false);
+
         self.currentArticle.id = item.id;
         self.currentArticle.name(item.name);
         self.currentArticle.description(item.description);
