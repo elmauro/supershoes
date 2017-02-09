@@ -10,7 +10,7 @@
 
 ## Deploy
 
-This Application was published on Azure. For publish de Application, follow the next steps:
+This Application was published on Azure http://supershoe.azurewebsites.net. For publish de Application, follow the next steps:
 
 <br />
 1. Set up the development environment:
