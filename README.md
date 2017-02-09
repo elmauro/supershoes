@@ -24,19 +24,17 @@ This Application was published on Azure. For publish de Application, follow the 
 
 3. Publish the Application to Azure Azure App Service:
 
-	b.  In Solution Explorer, right-click the project and select Publish
+	a.  In Solution Explorer, right-click the project and select Publish. Clicking Publish invokes the Publish Web dialog.
 
-		<img src="SuperShoes/Images/Publishing1.png" alt>
+	<img src="https://github.com/elmauro/supershoes/blob/documentation/SuperShoes/Images/Publishing1.png?raw=true">
 
-		Clicking Publish invokes the Publish Web dialog.
+	b.  Configure the connection and settings
 
-	c.  Configure the connection and settings
+	<img src="https://github.com/elmauro/supershoes/blob/documentation/SuperShoes/Images/Publishing2.png?raw=true">
 
-		<img src="SuperShoes/Images/Publishing2.png" alt>
+	c. Just click the Settings tab and check "Execute Code First Migrations"
 
-	d. Just click the Settings tab and check "Execute Code First Migrations"
-
-	e. To deploy the Application, click Publish. You can view the publishing progress in the Web Publish Activity window. 
+	d. To deploy the Application, click Publish. You can view the publishing progress in the Web Publish Activity window. 
 
 4. Open the Application in the Browser
 
@@ -45,15 +43,15 @@ This Application was published on Azure. For publish de Application, follow the 
 
 ## API Rest
 
-	The Api uses HTTP Basic Authentication. The username is "my_user" and the password is "my_password" for the proof. Encoding this whit https://www.base64encode.org/ the result looks like this bXlfdXNlcjpteV9wYXNzd29yZA==
+The Api uses HTTP Basic Authentication. The username is "my_user" and the password is "my_password" for the proof. Encoding this whit https://www.base64encode.org/ the result looks like this bXlfdXNlcjpteV9wYXNzd29yZA==
 
-	The Api offers the nex Services:
+The Api offers the nex Services:
 
-	1. http://supershoe.azurewebsites.net/Help
+	http://supershoe.azurewebsites.net/Help
 
-	It's possible to use Postman to test the API Services:
+It's possible to use Postman to test the API Services:
 
-	<img src="SuperShoes/Images/Postman1.png" alt>
+	<img src="https://github.com/elmauro/supershoes/blob/documentation/SuperShoes/Images/Postman1.png?raw=true">
 
 
 
