@@ -9,6 +9,7 @@
         public int total_in_shelf { get; set; }
         public int total_in_vault { get; set; }
 
+        public int store_id { get; set; }
         public string store_name { get; set; }
     }
 }
