@@ -6,6 +6,7 @@
     self.visibility = ko.observable();
     self.visible = ko.observable();
     self.show = ko.observable(false);
+    self.loader = ko.observable(true);
 
     var storesUri = '/api/stores/';
     var articlesUri = '/api/articles/';
@@ -30,6 +31,7 @@
     function getAllStores() {
         ajaxHelper(storesUri, 'GET').done(function (data) {
             self.stores(data.stores);
+            self.loader(false);
         });
     }
 

@@ -63,4 +63,6 @@ b. It's possible to use Postman to test the API Services:
 
 1. To improve the Grid presentation of the data with pagination and to implement popups.
 <br/>
-2. To improve data validation of input data. 
+2. To improve data validation of input data.
+</br>
+3. Add loader controls
